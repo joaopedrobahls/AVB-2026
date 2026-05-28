@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portal de Jogos de Química</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+
+      font-family: Arial, sans-serif;
+
+      min-height:100vh;
+
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+
+      color:white;
+
+      display:flex;
+
+      flex-direction:column;
+
+      align-items:center;
+
+      padding:30px;
+    }
+
+    h1{
+
+      font-size:3rem;
+
+      margin-bottom:10px;
+
+      color:#38bdf8;
+
+      text-align:center;
+    }
+
+    .descricao{
+
+      text-align:center;
+
+      max-width:800px;
+
+      margin-bottom:40px;
+
+      color:#cbd5e1;
+
+      font-size:1.1rem;
+    }
+
+    .container{
+
+      display:grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      gap:25px;
+
+      width:100%;
+
+      max-width:1200px;
+    }
+
+    .card{
+
+      background:white;
+
+      border-radius:20px;
+
+      overflow:hidden;
+
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+
+      transition:0.3s;
+
+      display:flex;
+
+      flex-direction:column;
+    }
+
+    .card:hover{
+
+      transform:translateY(-8px);
+    }
+
+    .topo{
+
+      height:180px;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      font-size:5rem;
+
+      color:white;
+    }
+
+    .memoria{
+      background:linear-gradient(135deg,#2563eb,#38bdf8);
+    }
+
+    .cruzadinha{
+      background:linear-gradient(135deg,#16a34a,#4ade80);
+    }
+
+    .xadrez{
+      background:linear-gradient(135deg,#dc2626,#f97316);
+    }
+
+    .conteudo{
+
+      padding:25px;
+
+      flex:1;
+
+      display:flex;
+
+      flex-direction:column;
+    }
+
+    .conteudo h2{
+
+      color:#0f172a;
+
+      margin-bottom:15px;
+    }
+
+    .conteudo p{
+
+      color:#334155;
+
+      line-height:1.5;
+
+      flex:1;
+    }
+
+    .botao{
+
+      margin-top:20px;
+
+      text-decoration:none;
+
+      background:#38bdf8;
+
+      color:white;
+
+      text-align:center;
+
+      padding:12px;
+
+      border-radius:12px;
+
+      transition:0.3s;
+
+      font-weight:bold;
+    }
+
+    .botao:hover{
+
+      background:#0284c7;
+    }
+
+    footer{
+
+      margin-top:40px;
+
+      color:#cbd5e1;
+
+      text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>🧪 Portal de Jogos de Química</h1>
+
+  <p class="descricao">
+    Escolha um dos jogos educativos abaixo para aprender conceitos de química de forma divertida e interativa.
+  </p>
+
+  <div class="container">
+
+    <!-- Jogo da Memória -->
+    <div class="card">
+
+      <div class="topo memoria">
+        🧠
+      </div>
+
+      <div class="conteudo">
+
+        <h2>Jogo da Memória</h2>
+
+        <p>
+          Relacione símbolos químicos com os nomes dos elementos da tabela periódica.
+        </p>
+
+        <a href="memoria/index.html" class="botao">
+          ▶ Jogar
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Cruzadinha -->
+    <div class="card">
+
+      <div class="topo cruzadinha">
+        ✏️
+      </div>
+
+      <div class="conteudo">
+
+        <h2>Cruzadinha Química</h2>
+
+        <p>
+          Resolva perguntas sobre partículas atômicas e conceitos básicos de química.
+        </p>
+
+        <a href="cruzadinha/index.html" class="botao">
+          ▶ Jogar
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Xadrez Químico -->
+    <div class="card">
+
+      <div class="topo xadrez">
+        ⚗️
+      </div>
+
+      <div class="conteudo">
+
+        <h2>Xadrez Químico</h2>
+
+        <p>
+          Capture íons adversários e forme compostos químicos através das reações.
+        </p>
+
+        <a href="xadrez/index.html" class="botao">
+          ▶ Jogar
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    Desenvolvido em HTML, CSS, JavaScript e p5.js
+  </footer>
+
+</body>
+
+</html>
