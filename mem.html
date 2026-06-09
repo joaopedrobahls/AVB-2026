@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jogo da Memória - Química</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Biblioteca p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body>
+
+  <h1>🧪 Jogo da Memória - Química</h1>
+
+  <p class="descricao">
+    Relacione os símbolos químicos com os nomes dos elementos.
+  </p>
+
+  <div id="game-container"></div>
+
+  <div class="painel">
+    <p>Pares encontrados: <span id="score">0</span>/8</p>
+
+    <button onclick="restartGame()">
+      🔄 Reiniciar
+    </button>
+  </div>
+
+  <footer>
+    Desenvolvido em JavaScript + p5.js
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
